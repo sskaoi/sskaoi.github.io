@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>宵初駅</title>
+   <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/tickets.css">
+  <link rel="icon" href="pic/icon.png" type="image/png">
+</head>
+
+
+  
+<body>
+
+  <!-- ヘッダー -->
+  <div class="header">
+    <a href="index.html" class="header-logo">宵初駅</a>
+    <div class="headerlist">
+      <ul>
+        <li><a href="/home.html">総合</a></li>
+        <li><a href="/tickets.html" class="selected">切符</a></li>
+        <li><a href="/info.html">情報</a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+
+<div class="main" style="margin-top: 80px; padding: 20px;">
+  <h2 class="page-title">行先一覧</h2>
+
+  <div class="ticket-list">
+
+    <!-- 切符1 -->
+    <a href="/tickets/meikai.html" class="ticket">
+      <div class="ticket-inner">
+          <div class="ticket-date js-date"></div>
+          <div class="ticket-to">冥界　ゆき</div>
+      </div>
+    </a>
+
+    <!-- 切符2 -->
+    <a href="/tickets/somewhere.html" class="ticket">
+      <div class="ticket-inner">
+        <div class="ticket-date js-date"></div>
+        <div class="ticket-to">■■　ゆき</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+
+
+  <script>
+  // 今日の日付を生成
+  const today = new Date();
+  const year = today.getFullYear().toString().slice(-2); // 下2桁
+  const month = ("0" + (today.getMonth() + 1)).slice(-2);
+  const day = ("0" + today.getDate()).slice(-2);
+  const dateText = `${year}.${month}.${day}`;
+
+  // .js-date を持つ要素すべてに日付を入れる
+  document.querySelectorAll(".js-date").forEach(el => {
+    el.textContent = dateText;
+  });
+</script>
+  
+
+
+</body>
+</html>
