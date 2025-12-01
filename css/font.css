@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face { 
+	font-family: 'NewTegomin'; 
+	src: url('../fonts/NewTegomin-Regular.ttf')
+	format('truetype'); 
+	font-display: swap; 
+}
+
+html,body { 
+	height:100%;
+	font-family: 'NewTegomin',serif; 
+	cursor: url('../pic/cursor.png'), auto;
+}
+
+a {
+  cursor: url('../pic/cursor.png') , auto;
+}
