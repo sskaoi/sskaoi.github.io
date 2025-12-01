@@ -55,14 +55,14 @@
 
 
   <script>
-  // 今日の日付を生成
+  // 今日の日付
   const today = new Date();
-  const year = today.getFullYear().toString().slice(-2); // 下2桁
+  const year = today.getFullYear().toString().slice(-2);
   const month = ("0" + (today.getMonth() + 1)).slice(-2);
   const day = ("0" + today.getDate()).slice(-2);
   const dateText = `${year}.${month}.${day}`;
 
-  // .js-date を持つ要素すべてに日付を入れる
+    
   document.querySelectorAll(".js-date").forEach(el => {
     el.textContent = dateText;
   });
