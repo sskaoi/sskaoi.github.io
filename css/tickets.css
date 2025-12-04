@@ -33,25 +33,24 @@
 
 
 .ticket-list {
- max-width: 260px;
-	align-items: center;
-  flex-direction: column; 
-  gap: 30px; 
-  margin-top: 40px; 
-　
-	
+  max-width: 260px;
+  display: flex;              /* ← 必須：中央寄せが効くようになる */
+  flex-direction: column;
+  justify-content: center;    /* 上下方向の中央寄せ（任意） */
+  align-items: center;        /* 左右方向の中央寄せ */
+  gap: 30px;
+  margin: 40px auto 0;        /* コンテナ自体も中央へ */
 }
+
 
 
 
 .ticket {
- display: block; 
+ display: block;
 width: 260px; 
-text-decoration: none;
- margin: 20px auto; 
+text-decoration: none; 
 color: #555; 
 }
-
 
 
  .ticket-inner {
