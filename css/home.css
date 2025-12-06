@@ -4,27 +4,72 @@
 .home-info {
   display: flex;
   justify-content: space-between;
-  gap: 0px;
-  margin-top: 0px;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .notice, .news {
+  height: 120px;
   border: 2px white solid;
-  padding: 0px;
-   margin: 0;
+  padding: 20px;
+  margin: 0 px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.notice {
+  width:420px;
+}
+
+.news {
+  display: flex;
+  width:260px;
+  flex-direction: column;
+  padding-right: 0px;
 }
 
 .notice h3, .news h3 {
   font-size: 20px;
   padding: 0px;
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
-.notice ul, .news ul{
-  font-size:13px;
-  list-style: none; 
-  
-  margin: 0;               
+.notice .content,
+.news .content {
+  font-size: 13px;
+  margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 
+
+.notice .content p {
+  margin: 0 0 3px 0;
+} 
+
+.news .content p {
+  margin: 0 12px 6px 0;
+}
+
+.news .content {
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 4px;
+}
+
+
+
+
+.news .content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.news .content::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+
+.news .content::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.7);
+  border-radius: 4px;
 }
