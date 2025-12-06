@@ -106,7 +106,6 @@ h2{
 
 .char {
   width: 150px; 
-  text-align: center;
 }
 
 .char img {
@@ -128,6 +127,7 @@ h2{
   font-size: 1rem;   /* 紹介文より少し大きい */
   margin: 0;
   font-weight: bold;
+  text-align: center;
 }
 
 
