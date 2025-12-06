@@ -23,3 +23,12 @@ display:flex;
 .myname p{
   margin: 0 0 5px 0;
 }
+
+
+.plan h3{
+  margin-bottom: 5px;
+}
+
+.plan p{
+  font-size: 16px;
+}
